@@ -1,0 +1,21 @@
+'This class will hold basic data about the change types for the undo/redo class
+'Matthew Cucco
+
+
+
+Public Class Change
+
+    'Variables
+    Public skip As Boolean
+    Public Before As Object
+    Public After As Object
+
+    'Enum types used to determine the type of change that was performed
+    Enum ChangeType
+        ProjectType
+        StackUp
+        StackUpItems
+        DimensionValues
+    End Enum
+
+End Class
