@@ -1,0 +1,41 @@
+'Description:       This class will be used to impliment an undo/redo button within the stackup program
+'Problem:           Within the stackup program, there is no way to backtrack your work if you should make a mistake 
+'Programmer:        Matthew Cucco   Co-op Summer 2016
+'Used this site as main reference: https://pradeep1210.wordpress.com/2011/04/09/add-undoredo-or-backforward-functionality-to-your-application/
+
+
+'----------------------------Log of activity---------------------------
+'5/16/15 : Created class, added the undo, redo, and back(next project) buttons to "WindowStackUp.xaml" but they cant perform any actions
+'       Creating a second class known as Change that will hold basic info
+'       This class will perform all logical operations on the object passed in
+
+'----------------------------Main Problems------------------------------
+
+Imports LuK_Stackup_Calculation
+
+Public Class UndoRedo
+    Inherits Change
+
+    Public ArrayofClasses() As Change
+    'This will be the function that revokes any single action or multiple action that the undo function does
+    Function Redo()
+        Return vbEmpty
+
+    End Function
+    'This function will allow the user to revert to a previous spot within the history log
+    Function Undo()
+
+
+
+        Return vbEmpty
+
+
+    End Function
+
+    Function NewItem(Before, After)
+
+        Return vbEmpty
+
+    End Function
+
+End Class
